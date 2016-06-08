@@ -19,41 +19,55 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 97,
-                    "endColumn": 56,
-                    "endOffset": 149
+                    "endColumn": 45,
+                    "endOffset": 138
                 },
                 "from": {
-                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 153,
+                        "endColumn": 45,
+                        "endOffset": 194
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 154,
-                    "endColumn": 50,
-                    "endOffset": 200
+                    "startOffset": 143,
+                    "endColumn": 46,
+                    "endOffset": 185
                 },
                 "from": {
-                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 205,
-                    "endColumn": 57,
-                    "endOffset": 258
+                    "startOffset": 190,
+                    "endColumn": 50,
+                    "endOffset": 236
                 },
                 "from": {
-                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml",
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/colors.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 178,
-                        "endColumn": 57,
-                        "endOffset": 231
+                        "startOffset": 102,
+                        "endColumn": 50,
+                        "endOffset": 148
                     }
                 }
             },
@@ -61,32 +75,46 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 263,
-                    "endColumn": 44,
-                    "endOffset": 303
+                    "startOffset": 241,
+                    "endColumn": 57,
+                    "endOffset": 294
                 },
                 "from": {
-                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 88,
+                        "endColumn": 57,
+                        "endOffset": 141
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 308,
-                    "endColumn": 51,
-                    "endOffset": 355
+                    "startOffset": 299,
+                    "endColumn": 55,
+                    "endOffset": 350
                 },
                 "from": {
-                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 55,
+                        "endOffset": 197
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 360,
-                    "endColumn": 51,
+                    "startOffset": 355,
+                    "endColumn": 56,
                     "endOffset": 407
                 },
                 "from": {
@@ -98,8 +126,8 @@
                     "startLine": 9,
                     "startColumn": 4,
                     "startOffset": 412,
-                    "endColumn": 51,
-                    "endOffset": 459
+                    "endColumn": 50,
+                    "endOffset": 458
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -109,9 +137,9 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 464,
-                    "endColumn": 52,
-                    "endOffset": 512
+                    "startOffset": 463,
+                    "endColumn": 57,
+                    "endOffset": 516
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -121,9 +149,9 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 517,
-                    "endColumn": 50,
-                    "endOffset": 563
+                    "startOffset": 521,
+                    "endColumn": 44,
+                    "endOffset": 561
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -133,9 +161,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 568,
-                    "endColumn": 57,
-                    "endOffset": 621
+                    "startOffset": 566,
+                    "endColumn": 51,
+                    "endOffset": 613
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -145,9 +173,9 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 626,
-                    "endColumn": 47,
-                    "endOffset": 669
+                    "startOffset": 618,
+                    "endColumn": 51,
+                    "endOffset": 665
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -157,9 +185,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 674,
-                    "endColumn": 50,
-                    "endOffset": 720
+                    "startOffset": 670,
+                    "endColumn": 51,
+                    "endOffset": 717
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -169,9 +197,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 725,
-                    "endColumn": 55,
-                    "endOffset": 776
+                    "startOffset": 722,
+                    "endColumn": 52,
+                    "endOffset": 770
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
@@ -181,9 +209,69 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 781,
+                    "startOffset": 775,
+                    "endColumn": 50,
+                    "endOffset": 821
+                },
+                "from": {
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 826,
                     "endColumn": 57,
-                    "endOffset": 834
+                    "endOffset": 879
+                },
+                "from": {
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 884,
+                    "endColumn": 47,
+                    "endOffset": 927
+                },
+                "from": {
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 932,
+                    "endColumn": 50,
+                    "endOffset": 978
+                },
+                "from": {
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 983,
+                    "endColumn": 55,
+                    "endOffset": 1034
+                },
+                "from": {
+                    "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1039,
+                    "endColumn": 57,
+                    "endOffset": 1092
                 },
                 "from": {
                     "file": "/Users/RajnishKumar/Documents/Android/AndroidProject/app/src/main/res/values/styles.xml"
