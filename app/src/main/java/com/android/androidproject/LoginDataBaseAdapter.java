@@ -84,5 +84,7 @@ public class LoginDataBaseAdapter
 	        String where="USERNAME = ?";
 		    db.update("LOGIN",updatedValues, where, new String[]{userName});			   
 		}		
+
+	
 }
 
