@@ -120,6 +120,27 @@ Log.e("random1", Integer.toString(arrayList.get(0)));
 			// json.
 			JSONObject json = new JSONObject(jsondata);
 			questi = json.getJSONArray(questions);
+for (int i = 0; i < questi.length(); i++) {
+				JSONObject c = questi.getJSONObject(i);
+
+				// Storing each json item in variable
+				String id = c.getString(ID);
+				String name = c.getString(question);
+				String email = c.getString(option1);
+				String address = c.getString(option2);
+				String gender = c.getString(option3);
+				String phone = c.getString(option4);
+				final String ans = c.getString(correctans);
+
+				if (id.toString().equals(Integer.toString(arrayList.get(j)))) {
+					tv.setText(name);
+					ans1.setText(email);
+					ans2.setText(address);
+					ans3.setText(gender);
+					ans4.setText(phone);
+					uans = ans.toString();
+
+				}
 
 	@Override
 	protected void onPause() {
