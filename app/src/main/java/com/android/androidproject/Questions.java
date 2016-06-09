@@ -46,7 +46,7 @@ public class Questions extends Activity {
 	private static final String option4 = "option4";
 	private static final String correctans = "Correctans";
 
-@Override
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
@@ -80,7 +80,7 @@ public class Questions extends Activity {
 				}
 			}
 		}
-Log.e("random1", Integer.toString(arrayList.get(0)));
+		Log.e("random1", Integer.toString(arrayList.get(0)));
 		Log.e("random2", Integer.toString(arrayList.get(1)));
 		Log.e("random3", Integer.toString(arrayList.get(2)));
 		Log.e("random4", Integer.toString(arrayList.get(3)));
@@ -120,7 +120,9 @@ Log.e("random1", Integer.toString(arrayList.get(0)));
 			// json.
 			JSONObject json = new JSONObject(jsondata);
 			questi = json.getJSONArray(questions);
-for (int i = 0; i < questi.length(); i++) {
+
+			// looping through All Contacts
+			for (int i = 0; i < questi.length(); i++) {
 				JSONObject c = questi.getJSONObject(i);
 
 				// Storing each json item in variable
@@ -141,7 +143,8 @@ for (int i = 0; i < questi.length(); i++) {
 					uans = ans.toString();
 
 				}
-	bSubmit.setOnClickListener(new OnClickListener() {
+
+				bSubmit.setOnClickListener(new OnClickListener() {
 
 					public void onClick(View arg0) {
 						// TODO Auto-generated method stub
@@ -179,7 +182,7 @@ for (int i = 0; i < questi.length(); i++) {
 							startActivity(intent);
 						}
 						j++;
-try {
+						try {
 
 							// Parse the data into jsonobject to get original
 							// data in form of json.
@@ -227,7 +230,8 @@ try {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	bSkip.setOnClickListener(new OnClickListener() {
+
+		bSkip.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -281,6 +285,18 @@ try {
 
 			}
 		});
+	}
+
+	private String jsonToStringFromAssetFolder(String string,
+			Context applicationContext) throws IOException {
+		// TODO Auto-generated method stub
+		AssetManager manager = applicationContext.getAssets();
+		InputStream file = manager.open(string);
+
+		byte[] data = new byte[file.available()];
+		file.read(data);
+		file.close();
+		return new String(data);
 	}
 
 	@Override
