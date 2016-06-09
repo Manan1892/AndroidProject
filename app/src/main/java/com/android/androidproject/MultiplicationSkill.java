@@ -52,5 +52,11 @@ public class MultiplicationSkill extends Activity{
 		
 	}
 
-
+	private void initialize() {
+		// TODO Auto-generated method stub
+		
+		bHome = (Button) findViewById(R.id.bHome);
+		bNext = (Button) findViewById(R.id.bNextPage);
+		
+	}
 }
