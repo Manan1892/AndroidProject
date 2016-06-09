@@ -27,7 +27,28 @@ public class DivisionSkill extends Activity{
 	}
 	
 
-	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		finish();
+	}
+
+
+	public void btnClick(View v)
+	{
+		if(v.getId() == R.id.bHome)
+		{
+			Intent startHome = new Intent(DivisionSkill.this, MainActivity.class);
+			startActivity(startHome);
+		}
+		else if(v.getId() == R.id.bNextPage)
+		{
+			Intent startLesGreaterIntent = new Intent(DivisionSkill.this, com.android.androidproject.LessGraeterThan.class);
+			startActivity(startLesGreaterIntent);
+		}
+		
+	}
 	
 	private void initialize() {
 		// TODO Auto-generated method stub
