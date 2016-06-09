@@ -228,6 +228,64 @@ try {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+
+	bSkip.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if (j == 4) {
+					// Toast.makeText(Questions.this, Integer.toString(k),
+					// Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent(Questions.this, com.android.androidproject.Score.class);
+					intent.putExtra("score", Integer.toString(k));
+					startActivity(intent);
+				}
+				j++;
+				try {
+
+					// Parse the data into jsonobject to get original data in
+					// form of json.
+					JSONObject json = new JSONObject(jsondata);
+					questi = json.getJSONArray(questions);
+
+					// looping through All Contacts
+					for (int i = 0; i < questi.length(); i++) {
+						JSONObject c = questi.getJSONObject(i);
+
+						// Storing each json item in variable
+						String id = c.getString(ID);
+						String name = c.getString(question);
+						String email = c.getString(option1);
+						String address = c.getString(option2);
+						String gender = c.getString(option3);
+						String phone = c.getString(option4);
+						String ans = c.getString(correctans);
+
+						if (id.toString().equals(
+								Integer.toString(arrayList.get(j)))) {
+							tv.setText(name);
+							ans1.setText(email);
+							ans2.setText(address);
+							ans3.setText(gender);
+							ans4.setText(phone);
+							uans = ans.toString();
+						}
+						if (j == 4) {
+							bSubmit.setText("Score");
+
+						}
+
+					}
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+
+			}
+		});
+	}
+
 	@Override
 	protected void onPause() {
 		// TODO Auto-generated method stub
