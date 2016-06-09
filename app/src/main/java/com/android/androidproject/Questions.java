@@ -80,6 +80,46 @@ public class Questions extends Activity {
 				}
 			}
 		}
+Log.e("random1", Integer.toString(arrayList.get(0)));
+		Log.e("random2", Integer.toString(arrayList.get(1)));
+		Log.e("random3", Integer.toString(arrayList.get(2)));
+		Log.e("random4", Integer.toString(arrayList.get(3)));
+		Log.e("random5", Integer.toString(arrayList.get(4)));
+
+		// ArrayList<HashMap<String, String>> contactList = new
+		// ArrayList<HashMap<String, String>>();
+
+		Intent intent = getIntent();
+		String str = intent.getStringExtra("level");
+
+		try {
+			if (str.equalsIgnoreCase("easy")) {
+				jsondata = jsonToStringFromAssetFolder("Json.txt",
+						getApplicationContext());
+				Toast.makeText(getBaseContext(), "Level Easy Selected",
+						Toast.LENGTH_SHORT).show();
+			} else if (str.equalsIgnoreCase("medium")) {
+				jsondata = jsonToStringFromAssetFolder("jason_mid.txt",
+						getApplicationContext());
+				Toast.makeText(getBaseContext(), "Level Medium Selected",
+						Toast.LENGTH_SHORT).show();
+			}
+			if (str.equalsIgnoreCase("hard")) {
+				jsondata = jsonToStringFromAssetFolder("json_hard.txt",
+						getApplicationContext());
+				Toast.makeText(getBaseContext(), "Level Hard Selected",
+						Toast.LENGTH_SHORT).show();
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+
+			// Parse the data into jsonobject to get original data in form of
+			// json.
+			JSONObject json = new JSONObject(jsondata);
+			questi = json.getJSONArray(questions);
 
 	@Override
 	protected void onPause() {
