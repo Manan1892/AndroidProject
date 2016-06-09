@@ -179,6 +179,54 @@ for (int i = 0; i < questi.length(); i++) {
 							startActivity(intent);
 						}
 						j++;
+try {
+
+							// Parse the data into jsonobject to get original
+							// data in form of json.
+							JSONObject json = new JSONObject(jsondata);
+							questi = json.getJSONArray(questions);
+
+							// looping through All Contacts
+							for (int i = 0; i < questi.length(); i++) {
+								JSONObject c = questi.getJSONObject(i);
+
+								// Storing each json item in variable
+								String id = c.getString(ID);
+								String qust = c.getString(question);
+								String opt1 = c.getString(option1);
+								String opt2 = c.getString(option2);
+								String opt3 = c.getString(option3);
+								String opt4 = c.getString(option4);
+								String corans = c.getString(correctans);
+
+								if (id.toString().equals(
+										Integer.toString(arrayList.get(j)))) {
+									tv.setText(qust);
+									ans1.setText(opt1);
+									ans2.setText(opt2);
+									ans3.setText(opt3);
+									ans4.setText(opt4);
+									uans = corans.toString();
+								}
+								if (j == 4) {
+									bSubmit.setText("Score");
+
+								}
+
+							}
+
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+
+					}
+				});
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	@Override
 	protected void onPause() {
 		// TODO Auto-generated method stub
