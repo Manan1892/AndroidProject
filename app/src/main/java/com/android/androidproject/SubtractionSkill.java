@@ -31,7 +31,23 @@ public class SubtractionSkill extends Activity{
 		finish();
 	}
 	
-	
+	/*
+	 * @param v
+	 * private button Click
+	 */
+	public void btnClick(View v)
+	{
+		if(v.getId() == R.id.bHome)
+		{
+			Intent startHome = new Intent(SubtractionSkill.this, MainActivity.class);
+			startActivity(startHome);
+		}
+		else if(v.getId() == R.id.bNextPage)
+		{
+			Intent stratMultilplication = new Intent(SubtractionSkill.this, MultiplicationSkill.class);
+			startActivity(stratMultilplication);
+		}
+	}
 	
 	private void initialize() {
 		// TODO Auto-generated method stub
