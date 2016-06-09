@@ -26,7 +26,26 @@ public class AdditionSkill extends Activity {
 
 	}
 
-	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		finish();
+	}
+
+	public void btnClick(View v) {
+
+		if (v.getId() == R.id.bHome) {
+			Intent startHome = new Intent(AdditionSkill.this,
+					MainActivity.class);
+			startActivity(startHome);
+		} else if (v.getId() == R.id.bNextPage) {
+			Intent startHome = new Intent(AdditionSkill.this,
+					com.android.androidproject.SubtractionSkill.class);
+			startActivity(startHome);
+		}
+
+	}
 
 	private void initialize() {
 		// TODO Auto-generated method stub
