@@ -141,7 +141,44 @@ for (int i = 0; i < questi.length(); i++) {
 					uans = ans.toString();
 
 				}
+	bSubmit.setOnClickListener(new OnClickListener() {
 
+					public void onClick(View arg0) {
+						// TODO Auto-generated method stub
+
+						int selectedid = radiogrp.getCheckedRadioButtonId();
+
+						RadioButton radiobtn = (RadioButton) findViewById(selectedid);
+
+						Log.e("hi", radiobtn.getText().toString());
+
+						if (radiobtn.getText().toString().equals(uans)) {
+							k = k + 10;
+							Toast.makeText(
+									Questions.this,
+									"Correct Answer,Score:"
+											+ Integer.toString(k),
+									Toast.LENGTH_SHORT).show();
+						} else {
+							k = k - 5;
+							Toast.makeText(
+									Questions.this,
+									"Wrong Answer,Score:" + Integer.toString(k),
+									Toast.LENGTH_SHORT).show();
+						}
+						Log.e("marks", Integer.toString(k));
+						if (j == 4) {
+							// Toast.makeText(Questions.this,
+							// Integer.toString(k), Toast.LENGTH_SHORT).show();
+							ch.stop();
+							String elapsedTime = ch.getText().toString();
+							Intent intent = new Intent(Questions.this,
+									com.android.androidproject.Score.class);
+							intent.putExtra("score", Integer.toString(k));
+							intent.putExtra("time", elapsedTime);
+							startActivity(intent);
+						}
+						j++;
 	@Override
 	protected void onPause() {
 		// TODO Auto-generated method stub
