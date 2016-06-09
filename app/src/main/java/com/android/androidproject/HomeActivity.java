@@ -78,3 +78,33 @@ public class HomeActivity extends Activity {
 			}
 		});
 	}
+
+	// Methos to handleClick Event of Sign In Button
+	public void signIn(View V) {
+		/*
+		 * final Dialog dialog = new Dialog(HomeActivity.this);
+		 * dialog.setContentView(R.layout.login); dialog.setTitle("Login");
+		 * 
+		 * // get the Refferences of views final EditText
+		 * editTextUserName=(EditText
+		 * )dialog.findViewById(R.id.editTextUserNameToLogin); final EditText
+		 * editTextPassword
+		 * =(EditText)dialog.findViewById(R.id.editTextPasswordToLogin);
+		 * 
+		 * Button btnSignIn=(Button)dialog.findViewById(R.id.buttonSignIn);
+		 */
+
+		// get the Refferences of views
+
+		// Set On ClickListener
+
+		// dialog.show();
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		// Close The Database
+		loginDataBaseAdapter.close();
+	}
+}
