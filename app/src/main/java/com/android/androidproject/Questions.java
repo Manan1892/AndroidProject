@@ -46,6 +46,40 @@ public class Questions extends Activity {
 	private static final String option4 = "option4";
 	private static final String correctans = "Correctans";
 
+@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+
+		// ---Hiding titlebar---
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+		setContentView(R.layout.questions);
+
+		final RadioGroup radiogrp = (RadioGroup) findViewById(R.id.radioGroup1);
+		tv = (TextView) findViewById(R.id.tvQues1);
+		ans1 = (RadioButton) findViewById(R.id.op1);
+		ans2 = (RadioButton) findViewById(R.id.op2);
+		ans3 = (RadioButton) findViewById(R.id.op3);
+		ans4 = (RadioButton) findViewById(R.id.op4);
+		bSubmit = (Button) findViewById(R.id.bnext);
+		bSkip = (Button) findViewById(R.id.bSkip);
+		ch = (Chronometer) findViewById(R.id.mChronomete);
+		
+		ch.start();
+
+		for (int i = 0; i < 5; i++) {
+			while (true) {
+				Random random = new Random();
+				int ii = random.nextInt(20);
+
+				if (!arrayList.contains(ii)) {
+					arrayList.add(ii);
+
+					break;
+				}
+			}
+		}
 
 
 	@Override
