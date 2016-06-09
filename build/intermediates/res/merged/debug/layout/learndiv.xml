@@ -77,13 +77,7 @@
             android:onClick="btnClick"
             android:text="Home" />
         
-        <Button
-            android:id="@+id/bNextPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="btnClick"
-            android:text="Next" />
+      
     </LinearLayout>
 
 </LinearLayout>
