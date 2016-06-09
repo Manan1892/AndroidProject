@@ -57,9 +57,28 @@ public class SignUPActivity extends Activity
 					Toast.makeText(getApplicationContext(), "Field Vaccant", Toast.LENGTH_LONG).show();
 					return;
 			}
-			
+			// check if both password matches
+			if(!password.equals(confirmPassword))
+			{
+				Toast.makeText(getApplicationContext(), "Password does not match", Toast.LENGTH_LONG).show();
+				return;
+			}
+			else
+			{
+			    // Save the Data in Database
+			    loginDataBaseAdapter.insertEntry(userName, password);
+			    Toast.makeText(getApplicationContext(), "Account Successfully Created ", Toast.LENGTH_LONG).show();
+			    Intent intent = new Intent(getBaseContext(), HomeActivity.class);
+				startActivity(intent);
+			}
 		}
 	});
 }
-	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		
+		loginDataBaseAdapter.close();
+	}
 }
