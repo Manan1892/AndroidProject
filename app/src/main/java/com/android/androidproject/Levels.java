@@ -38,6 +38,27 @@ public class Levels extends Activity{
 	 * private btnStarttest Click
 	 */
 	public void btnStratTest(View v)
-	
+	{
+		
+		if(rbEasy.isChecked())
+		{
+			Intent startQuestions = new Intent(Levels.this, com.android.androidproject.Questions.class);
+			startQuestions.putExtra("level", "easy");
+			startActivity(startQuestions);
+		}
+		else if(rbMedium.isChecked())
+		{
+			Intent startQuestions = new Intent(Levels.this, com.android.androidproject.Questions.class);
+			startQuestions.putExtra("level", "medium");
+			startActivity(startQuestions);
+		}
+		else if(rbHard.isChecked())
+		{
+			Intent startQuestions = new Intent(Levels.this, com.android.androidproject.Questions.class);
+			startQuestions.putExtra("level", "hard");
+			startActivity(startQuestions);
+		}
+		
+	}
 
 }
