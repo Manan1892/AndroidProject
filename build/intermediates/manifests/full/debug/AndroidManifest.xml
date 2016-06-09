@@ -92,6 +92,10 @@
             android:label="@string/reportCard" >
         </activity>
         <activity
+            android:name="com.android.androidproject.HomeSignInActivity"
+            android:label="@string/reportCard" >
+        </activity>
+        <activity
             android:name="com.android.androidproject.SignUPActivity"
             android:label="@string/reportCard" >
         </activity>
